@@ -1,10 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
 """
 Apache License 2.0
 Copyright (c) 2022 @Digital_Botz
@@ -24,9 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Telegram Link : https://t.me/Digital_Botz 
-Repo Link : https://github.com/DigitalBotz/Digital-Rename-Bot
-License Link : https://github.com/DigitalBotz/Digital-Rename-Bot/blob/main/LICENSE
+Telegram Link : https://t.me/GwitcherG
+Repo Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot
+License Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot/blob/main/LICENSE
 """
 
 # pyrogram imports
@@ -38,14 +31,14 @@ from helper.database import digital_botz
 from pyromod.exceptions import ListenerTimeout
 from config import rkn
 
-TRUE = [[InlineKeyboardButton('ᴍᴇᴛᴀᴅᴀᴛᴀ ᴏɴ', callback_data='metadata_1'),
+TRUE = [[InlineKeyboardButton('METADATA On', callback_data='metadata_1'),
        InlineKeyboardButton('✅', callback_data='metadata_1')
        ],[
-       InlineKeyboardButton('Sᴇᴛ Cᴜsᴛᴏᴍ Mᴇᴛᴀᴅᴀᴛᴀ', callback_data='cutom_metadata')]]
-FALSE = [[InlineKeyboardButton('ᴍᴇᴛᴀᴅᴀᴛᴀ ᴏғғ', callback_data='metadata_0'),
+       InlineKeyboardButton('Set Custom METADATA', callback_data='cutom_metadata')]]
+FALSE = [[InlineKeyboardButton('METADATE Off', callback_data='metadata_0'),
         InlineKeyboardButton('❌', callback_data='metadata_0')
        ],[
-       InlineKeyboardButton('Sᴇᴛ Cᴜsᴛᴏᴍ Mᴇᴛᴀᴅᴀᴛᴀ', callback_data='cutom_metadata')]]
+       InlineKeyboardButton('Set Custom METADATA', callback_data='cutom_metadata')]]
 
 
 @Client.on_message(filters.private & filters.command('metadata'))
@@ -81,10 +74,3 @@ async def query_metadata(bot: Client, query: CallbackQuery):
             await query.message.reply_text("⚠️ Error!!\n\n**Request timed out.**\nRestart by using /metadata", reply_to_message_id=query.message.id)
         except Exception as e:
             print(e)
-
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
