@@ -1,8 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
 """
 Apache License 2.0
 Copyright (c) 2022 @Digital_Botz
@@ -22,9 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Telegram Link : https://t.me/Digital_Botz 
-Repo Link : https://github.com/DigitalBotz/Digital-Rename-Bot
-License Link : https://github.com/DigitalBotz/Digital-Rename-Bot/blob/main/LICENSE
+Telegram Link : https://t.me/GwitcherG
+Repo Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot
+License Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot/blob/main/LICENSE
 """
 
 # extra imports
@@ -51,10 +46,10 @@ async def get_stats(bot, message):
         total_premium_users = "Disabled ✅"
     uptime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - bot.uptime))    
     start_t = time.time()
-    rkn = await message.reply('**ᴘʀᴏᴄᴇssɪɴɢ.....**')    
+    rkn = await message.reply('**Processing.....**')
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
-    await rkn.edit(text=f"**--Bᴏᴛ Sᴛᴀᴛᴜꜱ--** \n\n**⌚️ Bᴏᴛ Uᴩᴛɪᴍᴇ:** {uptime} \n**🐌 Cᴜʀʀᴇɴᴛ Pɪɴɢ:** `{time_taken_s:.3f} ᴍꜱ` \n**👭 Tᴏᴛᴀʟ Uꜱᴇʀꜱ:** `{total_users}`\n**💸 ᴛᴏᴛᴀʟ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀs:** `{total_premium_users}`")
+    await rkn.edit(text=f"**--Bot Status--** \n\n**⌚️ Bot Uptime:** {uptime} \n**🐌 Vurrent Ping:** `{time_taken_s:.3f} ᴍꜱ` \n**👭 Total User:** `{total_users}`\n**💸 Total Premium Users:** `{total_premium_users}`")
 
 # bot logs process 
 @Client.on_message(filters.command('logs') & filters.user(Config.ADMIN))
@@ -81,8 +76,8 @@ async def add_premium(client, message):
 
         time_string = " ".join(message.command[3:])
 
-        time_zone = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
-        current_time = time_zone.strftime("%d-%m-%Y\n⏱️ ᴊᴏɪɴɪɴɢ ᴛɪᴍᴇ : %I:%M:%S %p")
+        time_zone = datetime.datetime.now(pytz.timezone("Asia/Colombo"))
+        current_time = time_zone.strftime("%d-%m-%Y\n⏱️ Joining Time : %I:%M:%S %p")
 
         user = await client.get_users(user_id)
 
@@ -106,13 +101,13 @@ async def add_premium(client, message):
         type = user_data.get('usertype', "Free")
         data = await digital_botz.get_user(user_id)
         expiry = data.get("expiry_time")
-        expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ : %I:%M:%S %p")
+        expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Colombo")).strftime("%d-%m-%Y\n⏱️ Expire Time : %I:%M:%S %p")
 
-        await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ✅\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\nᴘʟᴀɴ :- `{type}`\nᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ :- `{humanbytes(limit)}`\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time_string}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", quote=True, disable_web_page_preview=True)
+        await message.reply_text(f"Premium Added Successfully ✅\n\n👤 USER : {user.mention}\n⚡ USER ID : <code>{user_id}</code>\nPLAN :- `{type}`\nDAILY UPLOAD LIMIT :- `{humanbytes(limit)}`\n⏰ PREMIUM ACCESS : <code>{time_string}</code>\n\n⏳ JOINING DATE : {current_time}\n\n⌛️ EXPIRE DATE : {expiry_str_in_ist}", quote=True, disable_web_page_preview=True)
 
         await client.send_message(
                 chat_id=user_id,
-                text=f"👋 ʜᴇʏ {user.mention},\nᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴘᴜʀᴄʜᴀꜱɪɴɢ ᴘʀᴇᴍɪᴜᴍ.\nᴇɴᴊᴏʏ !! ✨🎉\n\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\nᴘʟᴀɴ :- `{type}`\nᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ :- `{humanbytes(limit)}`\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True              
+                text=f"👋 Hey {user.mention},\nThank You for Purchasing Premium.\nEnjoy !! ✨🎉\n\n⏰ PREMIUM ACCESS : <code>{time}</code>\nPLAN :- `{type}`\nDAILY UPLOAD LIMIT :- `{humanbytes(limit)}`\n⏳ JOINING DATE : {current_time}\n\n⌛️ EXPIRE DATE : {expiry_str_in_ist}", disable_web_page_preview=True
             )    
 
     else:
@@ -122,8 +117,8 @@ async def add_premium(client, message):
         user_id = int(message.command[1])
         time_string = " ".join(message.command[2:])
 
-        time_zone = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
-        current_time = time_zone.strftime("%d-%m-%Y\n⏱️ ᴊᴏɪɴɪɴɢ ᴛɪᴍᴇ : %I:%M:%S %p")
+        time_zone = datetime.datetime.now(pytz.timezone("Asia/Colombo"))
+        current_time = time_zone.strftime("%d-%m-%Y\n⏱️ JOINING TIME : %I:%M:%S %p")
 
         user = await client.get_users(user_id)        
         seconds = await get_seconds(time_string)
@@ -135,13 +130,13 @@ async def add_premium(client, message):
         await digital_botz.addpremium(user_id, user_data)
         data = await digital_botz.get_user(user_id)
         expiry = data.get("expiry_time")
-        expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ : %I:%M:%S %p")
+        expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Colombo")).strftime("%d-%m-%Y\n⏱️ EXPIRE TIME : %I:%M:%S %p")
 
-        await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ✅\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time_string}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", quote=True, disable_web_page_preview=True)
+        await message.reply_text(f"Premium Added Successfully ✅\n\n👤 USER : {user.mention}\n⚡ USER ID : <code>{user_id}</code>\n⏰ PREMIUM ACCESS: <code>{time_string}</code>\n\n⏳ JOINING DATE : {current_time}\n\n⌛️ EXPIRE DATE : {expiry_str_in_ist}", quote=True, disable_web_page_preview=True)
 
         await client.send_message(
                 chat_id=user_id,
-                text=f"👋 ʜᴇʏ {user.mention},\nᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴘᴜʀᴄʜᴀꜱɪɴɢ ᴘʀᴇᴍɪᴜᴍ.\nᴇɴᴊᴏʏ !! ✨🎉\n\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True              
+                text=f"👋 ʜᴇʏ {user.mention},\nThank You For Purchasing Premium.\nEnjoy !! ✨🎉\n\n⏰ PREMIUM ACCESS : <code>{time}</code>\n⏳ JOINING DATE : {current_time}\n\n⌛️ EXPIRE DATE : {expiry_str_in_ist}", disable_web_page_preview=True
             )    
      
 
@@ -155,18 +150,18 @@ async def remove_premium(bot, message):
         user = await bot.get_users(user_id)
         if await digital_botz.has_premium_access(user_id):
             await digital_botz.remove_premium(user_id)
-            await message.reply_text(f"ʜᴇʏ {user.mention}, ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ.", quote=True)
-            await bot.send_message(chat_id=user_id, text=f"<b>ʜᴇʏ {user.mention},\n\n✨ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ᴛᴏ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ\n\nᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan</b>")
+            await message.reply_text(f"Hey {user.mention}, Premium Plan Successfully Removed.", quote=True)
+            await bot.send_message(chat_id=user_id, text=f"<b>Hey {user.mention},\n\n✨ Your Account Has Been Removed From Our Premium Plan\n\nᴄCheck Your Plan Here /myplan</b>")
         else:
-            await message.reply_text("ᴜɴᴀʙʟᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ !\nᴀʀᴇ ʏᴏᴜ ꜱᴜʀᴇ, ɪᴛ ᴡᴀꜱ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ɪᴅ ?", quote=True)
+            await message.reply_text("Unable to Remove Premium User !\nAre You Sure, It Was a Premium User ID?", quote=True)
     else:
-        await message.reply_text("ᴜꜱᴀɢᴇ : /remove_premium ᴜꜱᴇʀ ɪᴅ", quote=True)
+        await message.reply_text("USAAGE : /remove_premium USER ID", quote=True)
 
 
 # Restart to cancell all process 
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
 async def restart_bot(b, m):
-    rkn = await b.send_message(text="**🔄 ᴘʀᴏᴄᴇssᴇs sᴛᴏᴘᴘᴇᴅ. ʙᴏᴛ ɪs ʀᴇsᴛᴀʀᴛɪɴɢ.....**", chat_id=m.chat.id)
+    rkn = await b.send_message(text="**🔄 Process Stopped. Bot Is Restarting....**", chat_id=m.chat.id)
     failed = 0
     success = 0
     deactivated = 0
@@ -176,7 +171,7 @@ async def restart_bot(b, m):
     all_users = await digital_botz.get_all_users()
     async for user in all_users:
         try:
-            restart_msg = f"ʜᴇʏ, {(await b.get_users(user['_id'])).mention}\n\n**🔄 ᴘʀᴏᴄᴇssᴇs sᴛᴏᴘᴘᴇᴅ. ʙᴏᴛ ɪs ʀᴇsᴛᴀʀᴛɪɴɢ.....\n\n✅️ ʙᴏᴛ ɪs ʀᴇsᴛᴀʀᴛᴇᴅ. ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ.**"
+            restart_msg = f"ʜᴇʏ, {(await b.get_users(user['_id'])).mention}\n\n**🔄 Process Stopped. Bot Is Restarting.....\n\n✅️ Bot Is Restarted. Now Tou Can Use Me.**"
             await b.send_message(user['_id'], restart_msg)
             success += 1
         except InputUserDeactivated:
@@ -191,11 +186,11 @@ async def restart_bot(b, m):
             print(e)
             pass
         try:
-            await rkn.edit(f"<u>ʀᴇsᴛᴀʀᴛ ɪɴ ᴩʀᴏɢʀᴇꜱꜱ:</u>\n\n• ᴛᴏᴛᴀʟ ᴜsᴇʀs: {total_users}\n• sᴜᴄᴄᴇssғᴜʟ: {success}\n• ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs: {blocked}\n• ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs: {deactivated}\n• ᴜɴsᴜᴄᴄᴇssғᴜʟ: {failed}")
+            await rkn.edit(f"<u>Restart In Progress:</u>\n\n• TOTAL USERS: {total_users}\n• SUCCESSFUL: {success}\n• BLOCKED USERS: {blocked}\n• DELETED ACCOUNTS: {deactivated}\n• UNSUCCESSFUL: {failed}")
         except FloodWait as e:
             await asyncio.sleep(e.value)
     completed_restart = datetime.timedelta(seconds=int(time.time() - start_time))
-    await rkn.edit(f"ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʀᴇsᴛᴀʀᴛ: {completed_restart}\n\n• ᴛᴏᴛᴀʟ ᴜsᴇʀs: {total_users}\n• sᴜᴄᴄᴇssғᴜʟ: {success}\n• ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs: {blocked}\n• ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs: {deactivated}\n• ᴜɴsᴜᴄᴄᴇssғᴜʟ: {failed}")
+    await rkn.edit(f"Completed Restart: {completed_restart}\n\n• TOTAL USERS: {total_users}\n• SUCCESSFUL: {success}\n• BLOCKED USERS: {blocked}\n• DELETED ACCOUNTS: {deactivated}\n• UNSUCCESSFUL: {failed}")
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @Client.on_message(filters.private & filters.command("ban") & filters.user(Config.ADMIN))
@@ -292,10 +287,10 @@ async def _banned_users(_, m: Message):
      
 @Client.on_message(filters.command("broadcast") & filters.user(Config.ADMIN) & filters.reply)
 async def broadcast_handler(bot: Client, m: Message):
-    await bot.send_message(Config.LOG_CHANNEL, f"{m.from_user.mention} or {m.from_user.id} Iꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ Bʀᴏᴀᴅᴄᴀꜱᴛ......")
+    await bot.send_message(Config.LOG_CHANNEL, f"{m.from_user.mention} or {m.from_user.id} Is Started the Broadcast......")
     all_users = await digital_botz.get_all_users()
     broadcast_msg = m.reply_to_message
-    sts_msg = await m.reply_text("Bʀᴏᴀᴅᴄᴀꜱᴛ Sᴛᴀʀᴛᴇᴅ..!") 
+    sts_msg = await m.reply_text("Broadcast Started..!")
     done = 0
     failed = 0
     success = 0
@@ -311,9 +306,9 @@ async def broadcast_handler(bot: Client, m: Message):
            await digital_botz.delete_user(user['_id'])
         done += 1
         if not done % 20:
-           await sts_msg.edit(f"Bʀᴏᴀᴅᴄᴀꜱᴛ Iɴ Pʀᴏɢʀᴇꜱꜱ: \nTᴏᴛᴀʟ Uꜱᴇʀꜱ {total_users} \nCᴏᴍᴩʟᴇᴛᴇᴅ: {done} / {total_users}\nSᴜᴄᴄᴇꜱꜱ: {success}\nFᴀɪʟᴇᴅ: {failed}")
+           await sts_msg.edit(f"Broadcast In Progress: \nTOTAL USERS {total_users} \nCOMPLETED: {done} / {total_users}\nSUCCESS: {success}\nFAILED: {failed}")
     completed_in = datetime.timedelta(seconds=int(time.time() - start_time))
-    await sts_msg.edit(f"Bʀᴏᴀᴅᴄᴀꜱᴛ Cᴏᴍᴩʟᴇᴛᴇᴅ: \nCᴏᴍᴩʟᴇᴛᴇᴅ Iɴ `{completed_in}`.\n\nTᴏᴛᴀʟ Uꜱᴇʀꜱ {total_users}\nCᴏᴍᴩʟᴇᴛᴇᴅ: {done} / {total_users}\nSᴜᴄᴄᴇꜱꜱ: {success}\nFᴀɪʟᴇᴅ: {failed}")
+    await sts_msg.edit(f"Broadcast Completed: \nCompleted In `{completed_in}`.\n\nTOTAL USERS {total_users}\nCOMPLETED: {done} / {total_users}\nSUCCESS: {success}\nFAILED: {failed}")
            
 async def send_msg(user_id, message):
     try:
@@ -323,20 +318,14 @@ async def send_msg(user_id, message):
         await asyncio.sleep(e.value)
         return send_msg(user_id, message)
     except InputUserDeactivated:
-        logger.info(f"{user_id} : Dᴇᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+        logger.info(f"{user_id} : Deactivated")
         return 400
     except UserIsBlocked:
-        logger.info(f"{user_id} : Bʟᴏᴄᴋᴇᴅ Tʜᴇ Bᴏᴛ")
+        logger.info(f"{user_id} : Blocked the Bot")
         return 400
     except PeerIdInvalid:
-        logger.info(f"{user_id} : Uꜱᴇʀ Iᴅ Iɴᴠᴀʟɪᴅ")
+        logger.info(f"{user_id} : User ID Invalid")
         return 400
     except Exception as e:
         logger.error(f"{user_id} : {e}")
         return 500
- 
-
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
