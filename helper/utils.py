@@ -1,11 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To (https://github.com/JayMahakal98) & @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
-
 """
 Apache License 2.0
 Copyright (c) 2022 @Digital_Botz
@@ -25,9 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Telegram Link : https://t.me/Digital_Botz 
-Repo Link : https://github.com/DigitalBotz/Digital-Rename-Bot
-License Link : https://github.com/DigitalBotz/Digital-Rename-Bot/blob/main/LICENSE
+Telegram Link : https://t.me/GwitcherG
+Repo Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot
+License Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot/blob/main/LICENSE
 """
 
 # extra imports
@@ -64,7 +56,7 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
         try:
             await message.edit(
                 text=f"{ud_type}\n\n{tmp}",               
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="close")]])                                               
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✖️ Cancel ✖️", callback_data="close")]])
             )
         except:
             pass
@@ -78,7 +70,7 @@ def humanbytes(size):
     while size > power:
         size /= power
         n += 1
-    return str(round(size, 2)) + " " + Dic_powerN[n] + 'ʙ'
+    return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
 
 
 def TimeFormatter(milliseconds: int) -> str:
@@ -86,11 +78,11 @@ def TimeFormatter(milliseconds: int) -> str:
     minutes, seconds = divmod(seconds, 60)
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
-    tmp = ((str(days) + "ᴅ, ") if days else "") + \
-        ((str(hours) + "ʜ, ") if hours else "") + \
-        ((str(minutes) + "ᴍ, ") if minutes else "") + \
-        ((str(seconds) + "ꜱ, ") if seconds else "") + \
-        ((str(milliseconds) + "ᴍꜱ, ") if milliseconds else "")
+    tmp = ((str(days) + "D, ") if days else "") + \
+        ((str(hours) + "H, ") if hours else "") + \
+        ((str(minutes) + "M, ") if minutes else "") + \
+        ((str(seconds) + "S, ") if seconds else "") + \
+        ((str(milliseconds) + "MS, ") if milliseconds else "")
     return tmp[:-2] 
 
 def convert(seconds):
@@ -103,14 +95,14 @@ def convert(seconds):
 
 async def send_log(b, u):
     if Config.LOG_CHANNEL:
-        curr = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+        curr = datetime.datetime.now(pytz.timezone("Asia/Colombo"))
         log_message = (
-            "**--Nᴇᴡ Uꜱᴇʀ Sᴛᴀʀᴛᴇᴅ Tʜᴇ Bᴏᴛ--**\n\n"
-            f"Uꜱᴇʀ: {u.mention}\n"
-            f"Iᴅ: `{u.id}`\n"
-            f"Uɴ: @{u.username}\n\n"
-            f"Dᴀᴛᴇ: {curr.strftime('%d %B, %Y')}\n"
-            f"Tɪᴍᴇ: {curr.strftime('%I:%M:%S %p')}\n\n"
+            "**--New User Started The Bot--**\n\n"
+            f"USER: {u.mention}\n"
+            f"ID: `{u.id}`\n"
+            f"UN: @{u.username}\n\n"
+            f"Date: {curr.strftime('%d %B, %Y')}\n"
+            f"Time: {curr.strftime('%I:%M:%S %p')}\n\n"
             f"By: {b.mention}"
         )
         await b.send_message(Config.LOG_CHANNEL, log_message)
@@ -195,11 +187,3 @@ def metadata_text(metadata_text):
             subtitle_title = f[len("change-subtitle-title"):].strip()
 
     return author, title, video_title, audio_title, subtitle_title
-
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
