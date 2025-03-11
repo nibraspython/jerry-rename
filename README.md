@@ -1,40 +1,39 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠+𝗧𝗢+𝗗𝗜𝗚𝗜𝗧𝗔𝗟+𝗥𝗘𝗡𝗔𝗠𝗘+𝗕𝗢𝗧!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗗𝗜𝗚𝗜𝗧𝗔𝗟+𝗕𝗢𝗧𝗭!;𝗜+𝗔𝗠+𝗣𝗢𝗪𝗘𝗥𝗙𝗨𝗟+𝗧𝗚+𝗥𝗘𝗡𝗔𝗠𝗘+𝗕𝗢𝗧!)</p>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&width=435&lines=Welcome+to+Digital+Rename+Bot!;Edited+By+Chamindu+Gayanuka!;I+Am+Poerful+Telegram+Rename+Bot!)](https://git.io/typing-svg)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/b746aadfe59959eb76f59.jpg" alt="RKN RENAME BOT V3">
+  <img src="https://telegra.ph/file/eb80582fa42f9bd412085.jpg" alt="umz rename bot">
 </p>
 
 <p align="center">
 
-![Fork](https://img.shields.io/github/forks/DigitalBotz/Digital-Rename-Bot?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/DigitalBotz/Digital-Rename-Bot?color=%23&style=for-the-badge)
-![License](https://img.shields.io/github/license/DigitalBotz/Digital-Rename-Bot?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/DigitalBotz/Digital-Rename-Bot?style=for-the-badge)
+![Fork](https://img.shields.io/github/forks/Chamindu-Gayanuka/Digital-Rename-Bot?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/Chamindu-Gayanuka/Digital-Rename-Bot?color=%23&style=for-the-badge)
+![License](https://img.shields.io/github/license/Chamindu-Gayanuka/Digital-Rename-Bot?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/Chamindu-Gayanuka/Digital-Rename-Bot?style=for-the-badge)
 
 </p>
 
 
-### Sᴀᴍᴩʟᴇ Bᴏᴛ (Official Digital Rename Bot)
+### Sample Bot ( Digital Rename Bot )
 
-* [Rkn_RenameBot](http://t.me/Rkn_RenameBot)
-* [Digital_Rename_Bot](http://t.me/Digital_Rename_Bot)
+* [umz rename bot](http://t.me/umzrename_bot)
 
 
 ## Deploy Me 🥀
 
 <details><summary>📌 Deploy to Koyeb </summary>
   
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/RknDeveloper/Digital-Rename-Bot&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[WEBHOOK]=True&env[ADMIN]&env[DB_URL]&env[DB_NAME]=Rkn-Developer&env[FORCE_SUB]&env[START_PIC]&env[LOG_CHANNEL]=You%20Dont%20Need%20LogChannel%20To%20Remove%20This%20Variable&run_command=python%20bot.py&branch=main&name=rkn-rename) 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Chamindu-Gayanuka/Digital-Rename-Bot&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[WEBHOOK]=True&env[ADMIN]&env[DB_URL]&env[DB_NAME]=Cluster0&env[FORCE_SUB]&env[START_PIC]&env[LOG_CHANNEL]=You%20Dont%20Need%20LogChannel%20To%20Remove%20This%20Variable&run_command=python%20bot.py&branch=main&name=umz-rename) 
 </details>
 
 <details><summary>📌 Deploy to Render </summary>
   
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/DigitalBotz/Digital-Rename-Bot)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot)
 
 </details>
 
@@ -44,10 +43,10 @@
 
 <details><summary>📌 Deploy to Heroku </summary>
 
-<a href="https://heroku.com/deploy?template=https://github.com/DigitalBotz/Digital-Rename-Bot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"></p></a>
+<a href="https://heroku.com/deploy?template=https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"></p></a>
 </details>
 
-## Rᴇǫᴜɪʀᴇᴅ Cᴏɴғɪɢs
+## Required Configs 🛠
 
 * `BOT_TOKEN`  - Get Bot Token From @BotFather
 * `API_ID` - From my.telegram.org
@@ -56,10 +55,10 @@
 * `DB_URL`  - Mongo Database URL From https://cloud.mongodb.com
 * `DB_NAME`  - Your Database Name From Mongodb.
 * `FORCE_SUB` - Your Force Sub Channel Username Without @
-* `LOG_CHANNEL` - Bot Logs Sending Channel. If You Don't Need This To Remove This Variable In Your Server
+* `LOG_CHANNEL` - Bot Logs Sending Channel. If You Don't Need This Remove This Variable In Your Server
 * `STRING_SESSION` - Your Tg Premium Account String Session Required. `[Note :- If you remove the string session, 4GB files doesn't works on the bot.]`
 
-## 🥰 Features
+## Features 📋
 
 * Renames very fast .
 * Permanent Thumbnail support.
@@ -69,7 +68,7 @@
 * Set custom caption.
 * Has a custom Start-up pic.
 * Force subscribe available.
-* Supports ulimited renaming at a time.
+* Supports unlimited renaming at a time.
 * Custom Metadata Support.
 * Admin Command Available.
 * premium subscription available.
@@ -79,7 +78,7 @@
 * Developer Service 24x7. 🔥
 
 
-## Botfather Commands
+## Bot Father Commands
 ```
 start - 𝖈ʜᴇᴄᴋ 𝖎 𝖆ᴍ ʟɪᴠᴇ.
 plans - ᴜᴘɢʀᴀᴅᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ.
@@ -112,15 +111,13 @@ broadcast - Sᴇɴᴅ Mᴇssᴀɢᴇ Tᴏ Aʟʟ Usᴇʀs (Aᴅᴍɪɴ Oɴʟʏ)
 - Please, Just Fork The Repo And Edit As Per Your Needs. # Don't Remove My Credit.
 - ᴅᴏ ɴᴏᴛ ʀᴇᴍᴏᴠᴇ ᴄʀᴇᴅɪᴛs ɢɪᴠᴇɴ ɪɴ ᴛʜɪs ʀᴇᴘᴏ.
 - Importing this repo instead of forking is strictly prohibited, Kindly fork and edit as your wish. Must Give Credits for developer(s)
-- If you find any bugs or errors, [report](https://t.me/DigitalBotz_Support) it
+- If you find any bugs or errors, [report](https://t.me/umz_chat_bot) it
 
 ## ❣️ Special Thanks 👍
 
 - Thanks To TEAM-PYRO-BOTZ For His Awesome [PYRO-RENAME-BOT](https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT.git)
-- Thanks To [RknDeveloper](https://github.com/RknDeveloper) who have edited and modified this repo as now it is. (It's me 😂)
-- Thanks To [JayMahakal](https://github.com/JayMahakal98) who have edited and modified this repo as now it is.
-- Thanks To Rkn Developer Teams ✅ (Edit & New Feature Added)
+- Thanks To [Chamindu-Gayanuka](https://github.com/Chamindu-Gayanuka) who have edited and modified this repo as now it is. (It's me 😂)
 - Special Repo Owner Thanks To Digital Botz 🥲
 
 ## Last Updated
-- `03-02-2024 08:45:30 PM`
+- `11-03-2025 07:30 PM`
