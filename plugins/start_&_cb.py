@@ -65,10 +65,10 @@ async def start(client, message):
             
     user = message.from_user
     await digital_botz.add_user(client, message) 
-    if Config.RKN_PIC:
-        await message.reply_photo(Config.RKN_PIC, caption=rkn.START_TXT.format(user.mention), reply_markup=InlineKeyboardMarkup(start_button))    
+    if Config.START_PIC:
+        await message.reply_photo(Config.START_PIC, caption=start.START_TXT.format(user.mention), reply_markup=InlineKeyboardMarkup(start_button))
     else:
-        await message.reply_text(text=rkn.START_TXT.format(user.mention), reply_markup=InlineKeyboardMarkup(start_button), disable_web_page_preview=True)
+        await message.reply_text(text=start.START_TXT.format(user.mention), reply_markup=InlineKeyboardMarkup(start_button), disable_web_page_preview=True)
 
 
 @Client.on_message(filters.private & filters.command("myplan"))
