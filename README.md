@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/eb80582fa42f9bd412085.jpg" alt="umz rename bot">
+  <img src="https://telegra.ph/file/eb80582fa42f9bd412085.jpg" alt="umz rename bot" align="center" width="300" height="300" />
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 * [umz rename bot](http://t.me/umzrename_bot)
 
 
-## Deploy Me 🥀
+## Deploy Me 🚀
 
 <details><summary>📌 Deploy to Koyeb </summary>
   
@@ -46,7 +46,7 @@
 <a href="https://heroku.com/deploy?template=https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"></p></a>
 </details>
 
-## Required Configs 🛠
+## Required Configs 📝
 
 * `BOT_TOKEN`  - Get Bot Token From @BotFather
 * `API_ID` - From my.telegram.org
@@ -58,7 +58,7 @@
 * `LOG_CHANNEL` - Bot Logs Sending Channel. If You Don't Need This Remove This Variable In Your Server
 * `STRING_SESSION` - Your Tg Premium Account String Session Required. `[Note :- If you remove the string session, 4GB files doesn't works on the bot.]`
 
-## Features 📋
+## Features 📚
 
 * Renames very fast .
 * Permanent Thumbnail support.
