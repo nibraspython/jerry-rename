@@ -1,35 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
-"""
-Apache License 2.0
-Copyright (c) 2022 @Digital_Botz
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Telegram Link : https://t.me/Digital_Botz 
-Repo Link : https://github.com/DigitalBotz/Digital-Rename-Bot
-License Link : https://github.com/DigitalBotz/Digital-Rename-Bot/blob/main/LICENSE
-"""
-
-# extra imports
 import aiohttp, asyncio, warnings, pytz, datetime
 import logging
 import logging.config
@@ -99,24 +67,24 @@ class DigitalRenameBot(Client):
                 sys.modules["plugins" + plugin_name] = load
                 print("Digital Botz Imported " + plugin_name)
                 
-        print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️")
+        print(f"{me.first_name} Is Started.....✨️")
         
         for id in Config.ADMIN:
             if Config.STRING_SESSION:
-                try: await self.send_message(id, f"𝟮𝗚𝗕+ ғɪʟᴇ sᴜᴘᴘᴏʀᴛ ʜᴀs ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ᴛᴏ ʏᴏᴜʀ ʙᴏᴛ.\n\nNote: 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐬𝐭𝐫𝐢𝐧𝐠 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐫𝐞𝐪𝐮𝐢𝐫𝐞𝐝 𝐓𝐡𝐞𝐧 𝐬𝐮𝐩𝐩𝐨𝐫𝐭𝐬 𝟐𝐆𝐁+ 𝐟𝐢𝐥𝐞𝐬.\n\n**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")                                
+                try: await self.send_message(id, f"2GB+ File Support Has Been Added To Your Bot.\n\nNote: 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐬𝐭𝐫𝐢𝐧𝐠 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐫𝐞𝐪𝐮𝐢𝐫𝐞𝐝 𝐓𝐡𝐞𝐧 𝐬𝐮𝐩𝐩𝐨𝐫𝐭𝐬 𝟐𝐆𝐁+ 𝐟𝐢𝐥𝐞𝐬.\n\n**__{me.first_name}  Is Started.....✨️__**")
                 except: pass
             else:
-                try: await self.send_message(id, f"𝟮𝗚𝗕- ғɪʟᴇ sᴜᴘᴘᴏʀᴛ ʜᴀs ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ᴛᴏ ʏᴏᴜʀ ʙᴏᴛ.\n\n**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")                                
+                try: await self.send_message(id, f"2GB- File Support Has Been Added To Your Bot.\n\n**__{me.first_name}  Is Started.....✨️__**")
                 except: pass
                     
         if Config.LOG_CHANNEL:
             try:
-                curr = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+                curr = datetime.datetime.now(pytz.timezone("Asia/Colombo"))
                 date = curr.strftime('%d %B, %Y')
                 time = curr.strftime('%I:%M:%S %p')
-                await self.send_message(Config.LOG_CHANNEL, f"**__{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!**\n\n📅 Dᴀᴛᴇ : `{date}`\n⏰ Tɪᴍᴇ : `{time}`\n🌐 Tɪᴍᴇᴢᴏɴᴇ : `Asia/Kolkata`\n\n🉐 Vᴇʀsɪᴏɴ : `v{__version__} (Layer {layer})`</b>")                                
+                await self.send_message(Config.LOG_CHANNEL, f"**__{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 TimeZone : `Asia/Colombo`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")
             except:
-                print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
+                print("Please Make This Bot Admin in Your Log Channel")
 
     async def stop(self, *args):
         for id in Config.ADMIN:
@@ -147,13 +115,7 @@ if __name__ == "__main__":
     try:
         main()
     except errors.FloodWait as ft:
-        print(f"Flood Wait Occured, Sleeping For {ft}")
+        print(f"Flood Wait Occurred, Sleeping For {ft}")
         asyncio.sleep(ft.value)
         print("Now Ready For Deploying !")
         main()
-    
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Update Channel @Digital_Botz & @DigitalBotz_Support
