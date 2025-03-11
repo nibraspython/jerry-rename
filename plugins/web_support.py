@@ -1,10 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
 """
 Apache License 2.0
 Copyright (c) 2022 @Digital_Botz
@@ -24,9 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Telegram Link : https://t.me/Digital_Botz 
-Repo Link : https://github.com/DigitalBotz/Digital-Rename-Bot
-License Link : https://github.com/DigitalBotz/Digital-Rename-Bot/blob/main/LICENSE
+Telegram Link : https://t.me/GwitcherG
+Repo Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot
+License Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot/blob/main/LICENSE
 """
 
 from aiohttp import web
@@ -35,15 +28,9 @@ Rkn_FileRenameBot = web.RouteTableDef()
 
 @Rkn_FileRenameBot.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("RknDeveloper")
+    return web.json_response("Digital Rename Bot is Running")
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
     web_app.add_routes(Rkn_FileRenameBot)
     return web_app
-
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Update Channel @Digital_Botz & @DigitalBotz_Support
