@@ -1,10 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
 """
 Apache License 2.0
 Copyright (c) 2022 @Digital_Botz
@@ -24,9 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Telegram Link : https://t.me/Digital_Botz 
-Repo Link : https://github.com/DigitalBotz/Digital-Rename-Bot
-License Link : https://github.com/DigitalBotz/Digital-Rename-Bot/blob/main/LICENSE
+Telegram Link : https://t.me/GwitcherG
+Repo Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot
+License Link : https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot/blob/main/LICENSE
 """
 
 # imports
@@ -37,29 +30,29 @@ from helper.database import digital_botz
 @Client.on_message(filters.private & filters.command('set_prefix'))
 async def add_prefix(client, message):
     if len(message.command) == 1:
-        return await message.reply_text("**__Give The Prefix__\n\nExᴀᴍᴩʟᴇ:- `/set_prefix @Rkn_Bots`**")
+        return await message.reply_text("**__Give The Prefix__\n\nExample:- `/set_prefix @Unlimited_Movie_Zone`**")
     prefix = message.text.split(" ", 1)[1]
     RknDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     await digital_botz.set_prefix(message.from_user.id, prefix)
-    await RknDev.edit("__**✅ ᴘʀᴇꜰɪx ꜱᴀᴠᴇᴅ**__")
+    await RknDev.edit("__**✅ Prefix Saved**__")
 
 @Client.on_message(filters.private & filters.command('del_prefix'))
 async def delete_prefix(client, message):
     RknDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     prefix = await digital_botz.get_prefix(message.from_user.id)
     if not prefix:
-        return await RknDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇꜰɪx**__")
+        return await RknDev.edit("__**😔 You Don't Have Any Prefix**__")
     await digital_botz.set_prefix(message.from_user.id, None)
-    await RknDev.edit("__**❌️ ᴘʀᴇꜰɪx ᴅᴇʟᴇᴛᴇᴅ**__")
+    await RknDev.edit("__**❌️ Prefix Deleted**__")
 
 @Client.on_message(filters.private & filters.command('see_prefix'))
 async def see_prefix(client, message):
     RknDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     prefix = await digital_botz.get_prefix(message.from_user.id)
     if prefix:
-        await RknDev.edit(f"**ʏᴏᴜʀ ᴘʀᴇꜰɪx:-**\n\n`{prefix}`")
+        await RknDev.edit(f"**Your Prefix:-**\n\n`{prefix}`")
     else:
-        await RknDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇꜰɪx**__")
+        await RknDev.edit("__**😔 You Don't Have Any Prefix**__")
 
 # SUFFIX COMMOND ✨
 @Client.on_message(filters.private & filters.command('set_suffix'))
@@ -69,29 +62,22 @@ async def add_suffix(client, message):
     suffix = message.text.split(" ", 1)[1]
     RknDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     await digital_botz.set_suffix(message.from_user.id, suffix)
-    await RknDev.edit("__**✅ ꜱᴜꜰꜰɪx ꜱᴀᴠᴇᴅ**__")
+    await RknDev.edit("__**✅ Suffix Saved**__")
 
 @Client.on_message(filters.private & filters.command('del_suffix'))
 async def delete_suffix(client, message):
     RknDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     suffix = await digital_botz.get_suffix(message.from_user.id)
     if not suffix:
-        return await RknDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")
+        return await RknDev.edit("__**😔 You Don't Have Any Suffix**__")
     await digital_botz.set_suffix(message.from_user.id, None)
-    await RknDev.edit("__**❌️ ꜱᴜꜰꜰɪx ᴅᴇʟᴇᴛᴇᴅ**__")
+    await RknDev.edit("__**❌️ Suffix Deleted**__")
 
 @Client.on_message(filters.private & filters.command('see_suffix'))
 async def see_suffix(client, message):
     RknDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     suffix = await digital_botz.get_suffix(message.from_user.id)
     if suffix:
-        await RknDev.edit(f"**ʏᴏᴜʀ ꜱᴜꜰꜰɪx:-**\n\n`{suffix}`")
+        await RknDev.edit(f"**Your Suffix:-**\n\n`{suffix}`")
     else:
-        await RknDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")
-
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
+        await RknDev.edit("__**😔 You Don't Have Any Suffix**__")
