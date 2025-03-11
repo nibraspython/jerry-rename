@@ -54,6 +54,7 @@
 * `ADMIN` - AUTH Or Bot Controllers Id's Multiple Id Use Space To Split 
 * `DB_URL`  - Mongo Database URL From https://cloud.mongodb.com
 * `DB_NAME`  - Your Database Name From Mongodb.
+* `START_PIC` - Your Bot Start-up Picture <a href="https://telegra.ph/file/eb80582fa42f9bd412085.jpg">URL</a>
 * `FORCE_SUB` - Your Force Sub Channel Username Without @
 * `LOG_CHANNEL` - Bot Logs Sending Channel. If You Don't Need This Remove This Variable In Your Server
 * `STRING_SESSION` - Your Tg Premium Account String Session Required. `[Note :- If you remove the string session, 4GB files doesn't works on the bot.]`
