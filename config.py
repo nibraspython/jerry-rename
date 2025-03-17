@@ -15,12 +15,12 @@ class Config(object):
     DB_URL = os.environ.get("DB_URL","mongodb+srv://ftmbotzx:ftm@cluster0.yn3qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
-    START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/eb80582fa42f9bd412085.jpg")
+    RKN_PIC = os.environ.get("START_PIC", "https://imgur.com/a/G0yDe7n")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6292143807').split()]
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002281964280"))
 
     # free upload limit 
-    FREE_UPLOAD_LIMIT = 10442450944 # calculation 6*1024*1024*1024=results
+    FREE_UPLOAD_LIMIT = 11442450944 # calculation 6*1024*1024*1024=results
 
     # premium mode feature ✅
     UPLOAD_LIMIT_MODE = True 
@@ -45,7 +45,7 @@ Using This Bot You Can Rename & Change Thumbnail Of Your File 📁
 You Can Also Convert Video To File & File To Video 🎞️
 This Bot Also Support Custom Caption & Metadata 📑
 
-This Bot Was Created By : @GwitcherG 💞</b>"""
+This Bot Was Created By : @CineMazhavil</b>"""
 
     ABOUT_TXT = """<b>╭───────────⍟
 ├🤖 My Name    : {}
@@ -54,7 +54,7 @@ This Bot Was Created By : @GwitcherG 💞</b>"""
 ├📕 Library    : {}
 ├✏️ Language   : {}
 ├💾 Data Base  : {}
-├📊 Version    : <a href=https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot>{}</a></b>     
+├📊 Version    : <a href=https://t.me/malayalam_2025_movie_bot>{}</a></b>     
 ╰───────────────⍟ """
 
     HELP_TXT = """
@@ -62,7 +62,7 @@ This Bot Was Created By : @GwitcherG 💞</b>"""
 
 ✏️ <b><u>How to Rename a File</u></b>
 <b>•></b> Send Any File And Type New File Name \nAnd Select The Format [ document, video, audio ].           
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/Unlimited_Movie_Zone>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
+ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/CineMazhavil>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
 """
 
     UPGRADE_PREMIUM= """
@@ -138,13 +138,13 @@ V3.0.0 [STABLE]
 
 ☞ For Example:-
 
-`--change-title @Unlimited_Movie_Zone
---change-video-title @Unlimited_Movie_Zone
---change-audio-title @Unlimited_Movie_Zone
---change-subtitle-title @Unlimited_Movie_Zone
---change-author @Unlimited_Movie_Zone`
+`--change-title @CineMazhavil
+--change-video-title @CineMazhavil
+--change-audio-title @CineMazhavil
+--change-subtitle-title @CineMazhavil
+--change-author @CineMazhavil`
 
-📥 For Help Cont. @Unlimited_Movie_Zone
+📥 For Help Cont. @CineMazhavil
 """
     
     CUSTOM_FILE_NAME = """
@@ -159,29 +159,26 @@ you can pre-add a prefix and suffix along with your new filename
 ➢ /see_suffix - To see your suffix.
 ➢ /del_suffix - To delete your suffix.
 
-Example:- `/set_suffix @Unlimited_Movie_Zone`
-Example:- `/set_prefix @Unlimited_Movie_Zone`
+Example:- `/set_suffix @CineMazhavil`
+Example:- `/set_prefix @CineMazhavil`
 """
 
-    DEV_TXT = """<b><u>Special Thanks & Developers</b></u>
+    DEV_TXT = """<b><u>Special Thanks </b></u>
     
-» 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/Chamindu-Gayanuka/Digital-Rename-Bot>Digital-Rename-Bot</a>
-
-• ❣️ <a href=https://github.com/Chamindu-Gayanuka>RknDeveloper</a>
-• ❣️ <a href=https://github.com/DigitalBotz>DigitalBotz</a> """
+» MOVIE BOT : <a href=https://t.me/Malayalam_2025_movie_bot>Movie_Bot</a>"""
 
     SEND_METADATA = """
 ❪ SET CUSTOM METADATA ❫
 
 ☞ For Example:-
 
-`--change-title @Unlimited_Movie_Zone
---change-video-title @Unlimited_Movie_Zone
---change-audio-title @Unlimited_Movie_Zone
---change-subtitle-title @Unlimited_Movie_Zone
---change-author @Unlimited_Movie_Zone`
+`--change-title @CineMazhavil
+--change-video-title @CineMazhavil
+--change-audio-title @CineMazhavil
+--change-subtitle-title @CineMazhavil
+--change-author @CineMazhavil`
 
-📥 For Help Cont. @Unlimited_Movie_Zone
+📥 For Help Cont. @CineMazhavil
 """
     
     RKN_PROGRESS = """<b>\n
