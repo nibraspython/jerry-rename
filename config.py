@@ -12,15 +12,15 @@ class Config(object):
     
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")
-    DB_URL = os.environ.get("DB_URL","")
+    DB_URL = os.environ.get("DB_URL","mongodb+srv://ftmbotzx:ftm@cluster0.yn3qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/eb80582fa42f9bd412085.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1087141176').split()]
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001778606534"))
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6292143807').split()]
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002281964280"))
 
     # free upload limit 
-    FREE_UPLOAD_LIMIT = 6442450944 # calculation 6*1024*1024*1024=results
+    FREE_UPLOAD_LIMIT = 10442450944 # calculation 6*1024*1024*1024=results
 
     # premium mode feature ✅
     UPLOAD_LIMIT_MODE = True 
@@ -30,7 +30,7 @@ class Config(object):
     try:
         FORCE_SUB = int(os.environ.get("FORCE_SUB", "")) 
     except:
-        FORCE_SUB = os.environ.get("FORCE_SUB", "Unlimited_Movie_Zone")
+        FORCE_SUB = os.environ.get("FORCE_SUB", "lexasoppp")
         
     # wes response configuration     
     PORT = int(os.environ.get("PORT", "8080"))
